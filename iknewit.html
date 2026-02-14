@@ -66,6 +66,23 @@ body{
         transform:translateY(0);
         opacity:1;
     }
+
+
+}
+.gallery {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 </style>
 </head>
@@ -77,10 +94,16 @@ body{
         <!-- Replace this with your image -->
         <img src="love me 3.gif">
     </div>
-
+     
     <div class="text">
         I knew it 😍!
+
     </div>
+    <div class="gallery">
+    <img src="pic.jpeg" alt="Love 1">
+    <img src="pic2.jpeg" alt="Love 2">
+    <img src="pic 3.jpeg" alt="Love 3">
+</div>
 </div>
 
 </body>
