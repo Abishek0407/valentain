@@ -1,116 +1,52 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cute Reel Style</title>
+<title>I Knew It ❤️</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
 body{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    margin:0;
     background:linear-gradient(135deg,#fbc2eb,#fcd6e8);
-    overflow:hidden;
-}
-
-/* Card */
-.card{
-    background:white;
-    padding:20px;
-    border-radius:25px;
-    box-shadow:0 15px 30px rgba(0,0,0,0.2);
-    animation:pop 0.6s ease-in-out;
-}
-
-.card img{
-    width:200px;
-    height: 200px;
-    border-radius:20px;
-}
-
-/* Text */
-.text{
-    margin-top:30px;
-    font-size:32px;
-    font-weight:700;
+    font-family:Arial, sans-serif;
     text-align:center;
-    animation:fadeUp 1s ease-in-out;
+    padding:20px;
 }
 
-/* Animations */
-@keyframes pop{
-    0%{
-        transform:scale(0.7);
-        opacity:0;
-    }
-    100%{
-        transform:scale(1);
-        opacity:1;
-    }
+h1{
+    font-size:28px;
+    margin-bottom:25px;
 }
 
-@keyframes fadeUp{
-    0%{
-        transform:translateY(20px);
-        opacity:0;
-    }
-    100%{
-        transform:translateY(0);
-        opacity:1;
-    }
-}
-.gallery {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+.media-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
 }
 
-.gallery img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+.media-section img,
+.media-section video{
+    width:90%;
+    max-width:400px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
 }
-.gallery img,
-.gallery video{
-    width: 300px;
-    height:300px;
-    object-fit: cover;
-    border-radius: 50px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
 </style>
 </head>
 
 <body>
 
-<div>
-    <div class="card">
-        <!-- Replace this with your image -->
-        <img src="love me 3.gif">
-    </div>
-     
-    <div class="text">
-        I knew it 😍!
+<h1>I knew it 😍💖</h1>
 
-    </div>
-    <div class="gallery">
-    <img src="pic.jpeg" alt="Love 1">
-    <video autoplay loop controls playinline><source src = "abihirthipic.mp4" type="video/mp4"></video>
-</div>
+<div class="media-section">
+    <!-- Your single image -->
+    <img src="pic.jpeg" alt="Love Image">
+
+    <!-- Your video -->
+    <video controls loop playsinline>
+        <source src="abihirthipic.mp4" type="video/mp4">
+    </video>
 </div>
 
 </body>
